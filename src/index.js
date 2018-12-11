@@ -1,5 +1,5 @@
-import React, { Component } from "react"
-import { findDOMNode } from 'react-dom'
+import React, { Component } from "react";
+import { findDOMNode } from 'react-dom';
 
 export default ($_ResizeObserver = window.ResizeObserver) =>
     (WrappedComponent) =>
@@ -18,12 +18,15 @@ export default ($_ResizeObserver = window.ResizeObserver) =>
 
             componentDidMount(){
                 const $_element = findDOMNode(this.refs.WrappedComponent);
+
                 if(!$_element) return;
+
                 this.containerSizeObserver = new $_ResizeObserver(entries => {
                     this.setState({
                         elemResize: entries[0]
                     });
                 });
+
                 this.containerSizeObserver.observe($_element);
             }
 
@@ -35,10 +38,10 @@ export default ($_ResizeObserver = window.ResizeObserver) =>
             render() {
 
                 return (
-                    <WrappedComponent
+                    <WrappedComponent 
+                        {...this.props}
                         elemResize={this.state.elemResize}
                         ref="WrappedComponent"
-                        {...this.props}
                     />
                 )
             }

@@ -1,2 +1,2 @@
-import onResize from "./src/index.js"
+import onResize from "./lib"
 export default onResize

@@ -5,7 +5,7 @@ A simple React mixin who handle element resize detection from your React compone
 ## Installation
 
 ```bash
-npm install react-element-onresize --save
+npm install react-element-onresize --save-dev
 ```
 
 ## Usage

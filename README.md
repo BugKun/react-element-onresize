@@ -1,6 +1,6 @@
 # React element resize observer
 
-A simple React mixin who handle element resize detection from your React components.
+A simple React Higher-Order Components who handle element resize detection from your React Components.
 
 ## Installation
 

@@ -38,7 +38,7 @@ class Card extends Component {
     }
 
     render() {
-        const { elemResize, count} = this.props;
+        const { elemResize, count } = this.props;
         const { loading } = this.state;
 
         return (

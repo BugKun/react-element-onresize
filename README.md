@@ -21,8 +21,13 @@ class App extends Component {
   }
 
   render(){
-   return (
-      // Your element here...
+    const { elemResize } = this.props;
+
+    return (
+      <div>
+        <p>width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
+        <p>height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+      </div>
     )
   }
 }
@@ -40,15 +45,20 @@ class App extends Component {
   }
 
   render(){
+    const { elemResize } = this.props;
+
     return (
-      // Your element here...
+      <div>
+        <p>width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
+        <p>height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+      </div>
     )
   }
 }
 
 export default ElementResize()(App);
 ```
----- Polyfill Usage ----
+---- Polyfill usage ----
 ```javascript
 import React, { Component } from 'react';
 import ElementResize from 'react-element-onresize';
@@ -61,8 +71,13 @@ class App extends Component {
   }
 
   render(){
-   return (
-      // Your element here...
+    const { elemResize } = this.props;
+
+    return (
+      <div>
+        <p>width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
+        <p>height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+      </div>
     )
   }
 }

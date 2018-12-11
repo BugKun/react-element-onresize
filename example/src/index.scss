@@ -1,0 +1,34 @@
+﻿.resize-options {
+    margin-bottom: 25px;
+    span {
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.resize-wapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    .card {
+        padding: 10px;
+        border: 1px solid #000;
+        margin: 5px;
+        .index{
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .size {
+            color: #FF0000;
+        }
+        .loading {
+            text-align: center;
+        }
+        .picture {
+            text-align: center;
+            padding: 50px;
+            background: #ccc
+        }
+    }
+}

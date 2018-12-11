@@ -1,6 +1,6 @@
 # React element resize observer
 
-A simple React Higher-Order Components who handle element resize detection from your React Components.
+A simple React Higher-Order Component who handle element resize detection from your React Components.
 
 ## Installation
 

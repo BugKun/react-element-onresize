@@ -8,6 +8,18 @@ A simple React Higher-Order Component who handle element resize detection from y
 npm install react-element-onresize --save-dev
 ```
 
+## Browser Support
+---- With [ResizeObserver Polyfill](https://github.com/que-etc/resize-observer-polyfill) ----
+
+[![Build Status](https://saucelabs.com/browser-matrix/que-etc.svg)](https://saucelabs.com/beta/builds/303f5344a7214ba5b62bc7079a15d376)
+
+**NOTE:** Internet Explorer 8 and its earlier versions are not supported.
+
+---- Without any Polyfill ----
+
+![Without any Polyfill](https://raw.githubusercontent.com/BugKun/react-element-onresize/master/Browser-Support-Without-Polyfill.png)
+
+
 ## Usage
 ---- ESNext syntax with decorators ----
 ```javascript

@@ -1,6 +1,6 @@
 {
     "name": "react-element-onresize",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Detect element resizing from your components",
     "main": "index.js",
     "scripts": {

@@ -1,6 +1,6 @@
 {
     "name": "react-element-onresize",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Detect element resizing from your components",
     "main": "index.js",
     "scripts": {
@@ -9,6 +9,14 @@
         "lint": "cross-env NODE_ENV=development eslint ."
     },
     "author": "BUGKUN",
+    "keywords": [
+        "react-element-onresize",
+        "react-onresize",
+        "react",
+        "element",
+        "onresize",
+        "resize"
+    ],
     "dependencies": {
         "babel-plugin-react-css-modules": "^3.4.2"
     },

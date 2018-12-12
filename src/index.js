@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { findDOMNode } from 'react-dom';
 
-export default ($_ResizeObserver = window.ResizeObserver) =>
+export default (ResizeObserverPolyfill) =>
     (WrappedComponent) =>
         class onResize extends Component{
             constructor(props){
@@ -21,7 +21,14 @@ export default ($_ResizeObserver = window.ResizeObserver) =>
 
                 if(!$_element) return;
 
-                this.containerSizeObserver = new $_ResizeObserver(entries => {
+                const ResizeObserver = window.ResizeObserver || ResizeObserverPolyfill;
+
+                if(!ResizeObserver) {
+                    throw new Error("You may need a polyfill to handle this component.");
+                    return;
+                }
+
+                this.containerSizeObserver = new ResizeObserver(entries => {
                     this.setState({
                         elemResize: entries[0]
                     });
@@ -31,7 +38,7 @@ export default ($_ResizeObserver = window.ResizeObserver) =>
             }
 
             componentWillUnmount(){
-                this.containerSizeObserver.disconnect();
+                if(this.containerSizeObserver) this.containerSizeObserver.disconnect();
                 this.containerSizeObserver = null;
             }
 

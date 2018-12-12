@@ -3,7 +3,7 @@ import { findDOMNode } from 'react-dom';
 
 export default (ResizeObserverPolyfill) =>
     (WrappedComponent) =>
-        class onResize extends Component{
+        class ElementResize extends Component{
             constructor(props){
                 super(props);
 

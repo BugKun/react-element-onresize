@@ -1,5 +1,4 @@
-﻿const webpack = require("webpack"),
-    path = require('path'),
+﻿const path = require('path'),
     threadLoader = require('thread-loader');
 
 
@@ -14,7 +13,7 @@ module.exports = {
         'index': path.resolve(__dirname, './src')
     }, 
     output: {
-        path: path.resolve(__dirname, './lib'),
+        path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
         libraryTarget: 'umd',
         library: '[name]',

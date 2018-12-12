@@ -1,2 +1,2 @@
-import onResize from "./lib"
-export default onResize
+import ElementResize from "./dist"
+export default ElementResize

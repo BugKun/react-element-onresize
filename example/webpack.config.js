@@ -20,10 +20,10 @@ module.exports = {
             path.resolve(__dirname, './src'), 
             "webpack-hot-middleware/client?reload=true"
         ]
-    }, //入口文件
+    },
     output: {
-        path: path.resolve(__dirname, '../static'), //输出位置
-        filename: 'build/[name].[hash:6].js', //输入文件
+        path: path.resolve(__dirname, '../static'),
+        filename: 'build/[name].[hash:6].js',
         publicPath: '/' 
     },
     resolve: {

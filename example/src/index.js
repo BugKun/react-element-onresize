@@ -1,4 +1,5 @@
-﻿import React, { Component } from 'react';
+﻿import "babel-polyfill";
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
 import ElementResize from 'react-element-onresize';
@@ -49,8 +50,8 @@ class Card extends Component {
                         <div styleName="index">{count}</div>
                     )
                 }
-                <p styleName="size">width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
-                <p styleName="size">height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+                <p styleName="size">width: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.width) : 0} px</p>
+                <p styleName="size">height: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.height) : 0} px</p>
                 {
                     (loading)? 
                         (

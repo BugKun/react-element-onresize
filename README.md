@@ -37,8 +37,8 @@ class App extends Component {
 
     return (
       <div>
-        <p>width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
-        <p>height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+        <p>width: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.width) : 0} px</p>
+        <p>height: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.height) : 0} px</p>
       </div>
     )
   }
@@ -61,8 +61,8 @@ class App extends Component {
 
     return (
       <div>
-        <p>width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
-        <p>height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+        <p>width: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.width) : 0} px</p>
+        <p>height: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.height) : 0} px</p>
       </div>
     )
   }
@@ -87,8 +87,8 @@ class App extends Component {
 
     return (
       <div>
-        <p>width: {(elemResize.contentRect)? elemResize.contentRect.width : 0} px</p>
-        <p>height: {(elemResize.contentRect)? elemResize.contentRect.height : 0} px</p>
+        <p>width: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.width) : 0} px</p>
+        <p>height: {(elemResize.contentRect)? Math.floor(elemResize.contentRect.height) : 0} px</p>
       </div>
     )
   }

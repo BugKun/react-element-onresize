@@ -24,7 +24,7 @@ export default (ResizeObserverPolyfill) =>
                 const ResizeObserver = window.ResizeObserver || ResizeObserverPolyfill;
 
                 if(!ResizeObserver) {
-                    throw new Error("You may need a polyfill to handle this component.");
+                    console.error("You may need a polyfill to handle this component.");
                     return;
                 }
 
